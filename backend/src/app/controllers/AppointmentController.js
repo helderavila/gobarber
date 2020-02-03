@@ -108,7 +108,7 @@ class AppointmentController {
       user: provider_id,
     });
 
-    return res.json(appointment);
+    return res.json({ message: 'Agendamento criado com sucesso' }, appointment);
   }
 
   async delete(req, res) {
